@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notación Polaca a Expresión Matemática</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Lenguajes y Autómatas II</h1>
+        <h2 class="mb-4">Notación Polaca a Expresión Matemática</h2>
+
+        <!-- Input para ingresar la notación polaca -->
+        <div class="form-group">
+            <label for="expresionmate">Ingresa una expresión en notación polaca (preorden):</label>
+            <input type="text" id="expresion" class="form-control input-reducido" placeholder="Ej: * 4 + 5 6">
+        </div>
+
+        <button class="btn btn-primary" id="generarBtn">Convertir a Expresión Matemática</button>
+        <button class="btn btn-secondary" id="limpiarBtn">Limpiar</button>
+
+        <div class="resultados mt-4">
+            <div class="recorrido">
+                <h4>Expresión Matemática</h4>
+                <div id="expresionMatematica"></div> <!-- Expresión Matemática -->
+            </div>
+            <div class="resultado">
+                <h4>Resultado de la Operación</h4>
+                <div id="resultado"></div> <!-- Resultado de la operación matemática -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

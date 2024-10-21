@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://img.freepik.com/fotos-premium/luz-neon-fondo-pared-ladrillo_947206-4683.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-reducido {
+    width: 50%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(153, 0, 0, 1) 100%);
+    color: black;
+    border: 2px solid #990000;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.resultados {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Para que se acomoden mejor en pantallas más pequeñas */
+}
+
+.recorrido, .resultado {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(153, 3, 117, 1) 8%, rgba(17, 133, 158, 1) 76%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    color: white;
+    margin: 10px; /* Agregado para separarlos */
+}
+
+.recorrido h4, .resultado h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.recorrido div, .resultado div {
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.btn {
+    background: linear-gradient(90deg, rgba(152, 7, 7, 1) 16%, rgb(113, 0, 115) 68%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+}
